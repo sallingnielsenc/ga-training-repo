@@ -7,7 +7,7 @@ const app = express();
 // Define a route that handles HTTP GET requests to the root URL ('/')
 app.get('/', (req, res) => {
   // Render the "Hello, World!" message to the browser
-  res.send('Hello, World!!');
+  res.send('Hello, World!');
 });
 
 // Start the server and listen for incoming HTTP requests
