@@ -11,6 +11,12 @@ app.get('/', (req, res) => {
 });
 
 // Start the server and listen for incoming HTTP requests
-app.listen(3000, () => {
+const server = app.listen(3000, () => {
   console.log('Server running on http://localhost:3000/');
 });
+
+// Export the app and server for testing purposes
+module.exports = {
+  app,
+  server,
+};
